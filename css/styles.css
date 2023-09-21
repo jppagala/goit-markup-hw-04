@@ -185,12 +185,17 @@ p {
 /*#########################################*/
 
 .section.hero-section {
-  background-image: linear-gradient(to right, var(--GRAY), var(--GRAY)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url("../images/hero-bg-image.jpg");
-  background-size: cover, fill;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 188px 0px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .container.hero-container {
@@ -316,9 +321,10 @@ p {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-card:hover .link-icon-container,
-.team-card:focus-within .link-icon-container {
+.link-icon-container:hover,
+.link-icon-container:focus-within {
   background-color: var(--OCEAN);
+  cursor: pointer;
 }
 
 .team-card > img {
@@ -386,6 +392,7 @@ p {
 .customer-container:hover,
 .customer-container:focus-within {
   border: 1px solid var(--OCEAN);
+  cursor: pointer;
 }
 
 .customer-container:hover .customer-link,
@@ -456,6 +463,7 @@ p {
 .social-icons > .link-icon-container:hover,
 .social-icons > .link-icon-container:focus-within {
   background-color: var(--GREEN);
+  cursor: pointer;
 }
 
 /*#########################################*/
